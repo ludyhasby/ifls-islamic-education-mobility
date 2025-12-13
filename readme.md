@@ -217,9 +217,9 @@ def decode_pekerjaan_ortu(encode):
 ### **Karakteristik Kepala Keluarga (2007)**
 | Variabel | Tipe | Deskripsi | Ketersediaan |
 |----------|------|-----------|--------------|
-| `long_year_acad_kk_2007` | Float | Total pendidikan formal KK | Parsial (~833 obs) |
-| `long_year_acad_islam_educ_kk_2007` | Float | Total pendidikan Islam KK | Parsial (~833 obs) |
-| `islamic_educ_background_kk_2007` | Float (0/1) | Latar belakang pendidikan Islam KK | Parsial (~833 obs) |
+| `long_year_acad_kk_2007` | Float | Total pendidikan formal KK | Parsial (~922 obs) |
+| `long_year_acad_islam_educ_kk_2007` | Float | Total pendidikan Islam KK | Parsial (~922 obs) |
+| `islamic_educ_background_kk_2007` | Float (0/1) | Latar belakang pendidikan Islam KK | Parsial (~922 obs) |
 | `income_kk_2007` | Float | Pendapatan kepala keluarga 2007 | Lengkap |
 | `employment_status_kk_2007` | String | Status pekerjaan KK 2007 | Lengkap (~10.138 obs) |
 
