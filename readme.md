@@ -13,8 +13,8 @@ Tersedia **dua versi** dataset hasil pemrosesan:
 
 | Versi | Jumlah Observasi | Deskripsi |
 |-------|------------------|-----------|
-| **`processed_data.csv`** | ~10.878 | Dataset lengkap dengan semua variabel |
-| **`processed_data.dta`** | ~10.878 | Dataset lengkap dengan semua variabel |
+| **`processed_data_3.csv`** | ~10.878 | Dataset lengkap dengan semua variabel |
+| **`processed_data_3.dta`** | ~10.878 | Dataset lengkap dengan semua variabel |
 
 ### Format File
 - **CSV**: Delimiter `;` (semicolon)
@@ -336,7 +336,7 @@ df.groupby('urban_or_rural_2014')['increase_income'].describe()
 ## ⚠️ Catatan Penting
 
 ### **Limitasi Data**
-1. **Missing data kepala keluarga**: Hanya ~833 observasi memiliki data lengkap pendidikan KK
+1. **Missing data kepala keluarga**: Hanya ~922 observasi memiliki data lengkap pendidikan KK
 2. **Panel attrition**: Tidak semua responden 2007 ditemukan di 2014
 3. **Deflasi pendapatan**: Menggunakan IHK agregat, bukan regional
 
