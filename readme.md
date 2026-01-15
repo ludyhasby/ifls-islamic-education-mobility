@@ -99,6 +99,7 @@ df['islamic_educ_background'] = np.where(
 
 **Variabel:**
 - `ar15b`: Pendapatan tahunan
+- `ar15d`: Suku Bangsa
 
 **Deflasi Pendapatan:**
 ```python
@@ -110,6 +111,7 @@ df_k['ar15b'] = df_k['ar15b'] * 100 / 150.47  # IHK 2014 = 150.47
 - `current_income`: Pendapatan 2014 (ter-deflasi)
 - `past_income`: Pendapatan 2007
 - `increase_income`: Selisih pendapatan (`current_income - past_income`)
+- `etnic_group`: Suku Bangsa Individu
 
 #### B. **Jenis & Status Pekerjaan**
 **Sumber:** `b3a_tk3.dta`
@@ -188,6 +190,8 @@ def decode_pekerjaan_ortu(encode):
 | `hhid` | String | Household ID (dari `hhid14_9`) |
 | `age` | Kategori | Usia responden |
 | `sex` | String | Jenis kelamin (Male/Female) |
+| `etnic_group` | Enum | Jenis Suku Bangsa Individu (dari IFLS 2014) |
+
 
 ### **Pendidikan Individu**
 | Variabel | Tipe | Deskripsi |
@@ -360,6 +364,7 @@ df.groupby('urban_or_rural_2014')['increase_income'].describe()
 | Versi | Tanggal | Perubahan |
 |-------|---------|-----------|
 | 2.0 | 2025-12-14 | Handling Duplikasi data processing |
+| 2.1 | 2026-01-14 | Add Etnic Group                    |
 
 ---
 
